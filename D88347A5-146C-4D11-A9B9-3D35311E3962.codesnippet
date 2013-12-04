@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>new_method_description</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ @abstract &lt;#method_description#&gt;
+ @param &lt;#parameter#&gt;
+ @returns &lt;#retval#&gt;
+ */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D88347A5-146C-4D11-A9B9-3D35311E3962</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A sample of how one would write a description for a method.</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>appledoc - new method description</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
