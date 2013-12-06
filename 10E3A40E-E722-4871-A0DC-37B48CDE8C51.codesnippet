@@ -2,22 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xann</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>XCTAssertNotNil(&lt;#expression#&gt;, &lt;#message#&gt;);</string>
+	<string>- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqual:@"&lt;#key#&gt;"]) {
+        &lt;#...#&gt;
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D1AFFC1E-FBA3-4FB4-8DFC-C6D0393695F1</string>
+	<string>10E3A40E-E722-4871-A0DC-37B48CDE8C51</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert not nil for XCTest</string>
+	<string>Alternate version that looks at keypath instead of context</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>XCT Assert Not Nil</string>
+	<string>KVO - Observe Value for Key Path</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

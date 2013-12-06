@@ -3,24 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xann</string>
+	<string>boolp</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>XCTAssertNotNil(&lt;#expression#&gt;, &lt;#message#&gt;);</string>
+	<string>@property (nonatomic, assign, getter=&lt;#isVariableName#&gt;) BOOL &lt;#variableName#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D1AFFC1E-FBA3-4FB4-8DFC-C6D0393695F1</string>
+	<string>A710C750-B15D-4A4E-8D24-45F71261D9F9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert not nil for XCTest</string>
+	<string>@property definition for a BOOL</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>XCT Assert Not Nil</string>
+	<string>BOOL Property Definition</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

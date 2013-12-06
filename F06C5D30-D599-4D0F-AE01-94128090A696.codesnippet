@@ -3,21 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xann</string>
+	<string>blockd</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>XCTAssertNotNil(&lt;#expression#&gt;, &lt;#message#&gt;);</string>
+	<string>double delayInSeconds = &lt;#time in seconds#&gt;;
+dispatch_time_t dispatchTime = dispatch_time(DISPATCH_TIME_NOW,
+                                             delayInSeconds * NSEC_PER_SEC);
+dispatch_after(dispatchTime, dispatch_get_main_queue(), ^{
+        &lt;#...#&gt;
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D1AFFC1E-FBA3-4FB4-8DFC-C6D0393695F1</string>
+	<string>F06C5D30-D599-4D0F-AE01-94128090A696</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert not nil for XCTest</string>
+	<string>Execute a block after a delay.</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>XCT Assert Not Nil</string>
+	<string>Delayed Block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

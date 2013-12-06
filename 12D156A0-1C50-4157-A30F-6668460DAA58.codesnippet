@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>datef</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// creating NSDateFormatters is expensive.  So we create a static instance...
++ (NSDateFormatter *)dateFormatter {
+    
+    static NSDateFormatter *kDateFormatter = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        kDateFormatter = [[NSDateFormatter alloc] init];
+        kDateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
+        kDateFormatter.dateFormat = @"yyyy-MM-dd";  // you configure this based on the strings that your webservice uses!!
+    });
+    
+    return kDateFormatter;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>12D156A0-1C50-4157-A30F-6668460DAA58</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Static instance of a dateFormatter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSDateFormatter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

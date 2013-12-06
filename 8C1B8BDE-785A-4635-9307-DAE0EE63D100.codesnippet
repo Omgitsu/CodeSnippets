@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xann</string>
+	<string>kvo</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>XCTAssertNotNil(&lt;#expression#&gt;, &lt;#message#&gt;);</string>
+	<string>[&lt;#target#&gt; addObserver:&lt;#observer#&gt;
+             forKeyPath:@"&lt;#key#&gt;"
+                options:(NSKeyValueObservingOptionNew |
+                         NSKeyValueObservingOptionOld)
+                context:NULL];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D1AFFC1E-FBA3-4FB4-8DFC-C6D0393695F1</string>
+	<string>8C1B8BDE-785A-4635-9307-DAE0EE63D100</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Assert not nil for XCTest</string>
+	<string>Register an observer for a specific key</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>XCT Assert Not Nil</string>
+	<string>KVO - Register Observer</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
